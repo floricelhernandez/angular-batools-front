@@ -1,0 +1,294 @@
+<div class="topbar-menu">
+    <div class="container-fluid">
+        <div id="navigation" [ngbCollapse]="!showMobileMenu">
+            <!-- Navigation Menu-->
+            <ul class="navigation-menu">
+
+                <li class="has-submenu">
+                    <a routerLink="/dashboard/dashboard2" href="javascript: void(0);" (click)="onMenuClick($event)">
+                        <i class="remixicon-dashboard-line"></i>Tablero <div class="arrow-down"></div></a>
+
+                </li>
+
+                <li class="has-submenu">
+                    <a href="javascript: void(0);" (click)="onMenuClick($event)">
+                        <i class="remixicon-dashboard-line"></i>Apps <div class="arrow-down"></div></a>
+                    <ul class="submenu">
+                        <li>
+                            <a routerLink="/apps/proyectos" class="side-nav-link-ref"
+                                routerLinkActive="active">Proyectos</a>
+                        </li>
+                        <li>
+                            <a routerLink="/apps/file-manager" class="side-nav-link-ref" routerLinkActive="active">Notas</a>
+                        </li>
+                        <li>
+                            <a routerLink="/apps/tickets" class="side-nav-link-ref"
+                               routerLinkActive="active">Tickets</a>
+                        </li>
+                        <li>
+                            <a routerLink="/apps/kanbanboard" class="side-nav-link-ref" routerLinkActive="active">Kanban
+                                Board</a>
+                        </li>
+                        <li>
+                            <a routerLink="/apps/calendar" class="side-nav-link-ref"
+                                routerLinkActive="active">Calendario</a>
+                        </li>
+
+
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="javascript: void(0);" (click)="onMenuClick($event)"> <i
+                            class="remixicon-layout-line"></i>Vista <div class="arrow-down"></div></a>
+
+                    <ul class="submenu">
+                        <li>
+                            <a (click)="darkMenubar()" href="javascript: void(0);" class="side-nav-link-ref" routerLinkActive="active">Menubar
+                                Dark</a>
+                        </li>
+                        <li>
+                            <a (click)="lightTopbar()" href="javascript: void(0);" class="side-nav-link-ref" routerLinkActive="active">Topbar
+                                Light</a>
+                        </li>
+                        <li>
+                            <a (click)="centerMenu()" href="javascript: void(0);" class="side-nav-link-ref" routerLinkActive="active">Center
+                                Menu</a>
+                        </li>
+                        <li>
+                            <a (click)="unstickyHeader()" href="javascript: void(0);" class="side-nav-link-ref" routerLinkActive="active">Unsticky
+                                Header</a>
+                        </li>
+                        <li>
+                            <a (click)="boxedLayout()" href="javascript: void(0);" class="side-nav-link-ref" routerLinkActive="active">Boxed</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="javascript: void(0);" (click)="onMenuClick($event)"> <i
+                            class="remixicon-briefcase-5-line"></i>UI Elements <div class="arrow-down"></div>
+                    </a>
+                    <ul class="submenu megamenu">
+                        <li>
+                            <ul>
+                                <li>
+                                    <a routerLink="/ui/buttons" class="side-nav-link-ref"
+                                        routerLinkActive="active">Buttons</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ui/cards" class="side-nav-link-ref"
+                                        routerLinkActive="active">Cards</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ui/portlets" class="side-nav-link-ref"
+                                        routerLinkActive="active">Portlets</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ui/tabs-accordions" class="side-nav-link-ref"
+                                        routerLinkActive="active">Tabs & Accordions</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ui/modals" class="side-nav-link-ref"
+                                        routerLinkActive="active">Modals</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ui/progress" class="side-nav-link-ref"
+                                        routerLinkActive="active">Progress</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a routerLink="/ui/notifications" class="side-nav-link-ref"
+                                        routerLinkActive="active">Notifications</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ui/ribbons" class="side-nav-link-ref"
+                                        routerLinkActive="active">Ribbons</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ui/spinners" class="side-nav-link-ref"
+                                        routerLinkActive="active">Spinners</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ui/ui-general" class="side-nav-link-ref"
+                                        routerLinkActive="active">General UI</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ui/typography" class="side-nav-link-ref"
+                                        routerLinkActive="active">Typography</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/ui/grid" class="side-nav-link-ref"
+                                        routerLinkActive="active">Grid</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="javascript: void(0);" (click)="onMenuClick($event)">
+                        <i class="remixicon-honour-line"></i>Components <div class="arrow-down"></div>
+                    </a>
+                    <ul class="submenu">
+                        <li class="has-submenu">
+                            <a href="javascript: void(0);" (click)="onMenuClick($event)"><i class="fe-anchor mr-1"></i>
+                                Admin UI <div class="arrow-down"></div></a>
+                            <ul class="submenu">
+                                <li>
+                                    <a routerLink="/adminUI/sweet-alert" class="side-nav-link-ref"
+                                        routerLinkActive="active">Sweet Alert</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/adminUI/range-slider" class="side-nav-link-ref"
+                                        routerLinkActive="active">Range Slider</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/adminUI/carousel" class="side-nav-link-ref"
+                                        routerLinkActive="active">Carousel</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a routerLink="/widgets" class="side-nav-link-ref" routerLinkActive="active"><i
+                                    class="fe-aperture mr-1"></i> Widgets </a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript: void(0);" (click)="onMenuClick($event)"><i
+                                    class="fe-bookmark mr-1"></i> Forms <div class="arrow-down"></div></a>
+                            <ul class="submenu">
+                                <li>
+                                    <a routerLink="/form/elements" class="side-nav-link-ref" routerLinkActive="active">General Elements</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/form/advanced" class="side-nav-link-ref" routerLinkActive="active">Advanced</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/form/validation" class="side-nav-link-ref" routerLinkActive="active">Validation</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/form/wizard" class="side-nav-link-ref" routerLinkActive="active">Wizard</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/form/summernote" class="side-nav-link-ref" routerLinkActive="active">Summernote</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/form/uploads" class="side-nav-link-ref" routerLinkActive="active">File Uploads</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript: void(0);" (click)="onMenuClick($event)"><i class="fe-grid mr-1"></i>
+                                Tables <div class="arrow-down">
+                                </div></a>
+                            <ul class="submenu">
+                                <li>
+                                    <a routerLink="/tables/basic" class="side-nav-link-ref" routerLinkActive="active">Basic Tables</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/tables/advanced" class="side-nav-link-ref" routerLinkActive="active">Advanced Tables</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript: void(0);" (click)="onMenuClick($event)"><i
+                                    class="fe-bar-chart-2 mr-1"></i> Charts <div class="arrow-down"></div></a>
+                            <ul class="submenu">
+                                <li>
+                                    <a routerLink="/chart/apex" class="side-nav-link-ref" routerLinkActive="active">Apex Charts</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/chart/chartjs" class="side-nav-link-ref" routerLinkActive="active">Chartjs Charts</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/chart/chartist" class="side-nav-link-ref" routerLinkActive="active">Chartist Charts</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript: void(0);" (click)="onMenuClick($event)"><i class="fe-cpu mr-1"></i>
+                                Icons <div class="arrow-down">
+                                </div></a>
+                            <ul class="submenu">
+                                <li>
+                                    <a routerLink="/icons/remix" class="side-nav-link-ref" routerLinkActive="active">Remix Icons</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/icons/feather" class="side-nav-link-ref" routerLinkActive="active">Feather Icons</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/icons/material" class="side-nav-link-ref" routerLinkActive="active">Material Design Icons</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/icons/fontawesome" class="side-nav-link-ref" routerLinkActive="active">Font Awesome</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/icons/themify" class="side-nav-link-ref" routerLinkActive="active">Themify</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/icons/weather" class="side-nav-link-ref" routerLinkActive="active">Weather</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="javascript: void(0);" (click)="onMenuClick($event)"><i class="fe-map mr-1"></i>
+                                Maps <div class="arrow-down">
+                                </div></a>
+                            <ul class="submenu">
+                                <li>
+                                    <a routerLink="/maps/google" class="side-nav-link-ref" routerLinkActive="active">Google Maps</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="javascript: void(0);" (click)="onMenuClick($event)"> <i
+                            class="remixicon-layout-line"></i>Errors <div class="arrow-down"></div></a>
+                    <ul class="submenu">
+                        <li>
+                            <a routerLink="/error/error-404" class="side-nav-link-ref" routerLinkActive="active">Error 404</a>
+                        </li>
+                        <li>
+                            <a routerLink="/error/error-500" class="side-nav-link-ref" routerLinkActive="active">Error 500</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="has-submenu">
+                    <a href="javascript: void(0);" (click)="onMenuClick($event)"> <i
+                            class="remixicon-layout-line"></i>Extra Pages <div class="arrow-down"></div></a>
+                    <ul class="submenu">
+                        <li>
+                            <a routerLink="/extras/profile" class="side-nav-link-ref" routerLinkActive="active">Profile</a>
+                        </li>
+                        <li>
+                            <a routerLink="/extras/timeline" class="side-nav-link-ref" routerLinkActive="active">Timeline</a>
+                        </li>
+                        <li>
+                            <a routerLink="/extras/invoice" class="side-nav-link-ref" routerLinkActive="active">Invoice</a>
+                        </li>
+                        <li>
+                            <a routerLink="/extras/pricing" class="side-nav-link-ref" routerLinkActive="active">Pricing</a>
+                        </li>
+                        <li>
+                            <a routerLink="/extras/gallery" class="side-nav-link-ref" routerLinkActive="active">Gallery</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!-- End navigation menu -->
+
+            <div class="clearfix"></div>
+        </div>
+        <!-- end #navigation -->
+    </div>
+    <!-- end container -->
+</div>
+<!-- end navbar-custom -->
